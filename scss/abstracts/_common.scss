@@ -1,0 +1,119 @@
+/* #region Général */
+html {
+  scroll-behavior: smooth;
+  color: var(--common-neutral-hight);
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "verdana", "arial", "sans-serif" !important;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body button {
+  font-family: "Helvetica Neue", "Helvetica", "verdana", "arial", "sans-serif";
+}
+
+body textarea {
+  font-family: "Helvetica Neue", "Helvetica", "verdana", "arial", "sans-serif";
+}
+
+body input[type="text"],
+body input[type="date"],
+body input[type="number"] {
+  font-family: "Helvetica Neue", "Helvetica", "verdana", "arial", "sans-serif";
+}
+
+body select {
+  font-family: "Helvetica Neue", "Helvetica", "verdana", "arial", "sans-serif";
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: var(--noir);
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1 {
+  font-size: 45px;
+  text-wrap: balance;
+  font-family: "Century Gothic", "Helvetica Neue", "Helvetica", "verdana",
+    "arial", "sans-serif";
+}
+
+h2 {
+  font-size: 30px;
+  text-wrap: balance;
+  font-family: "Century Gothic", "Helvetica Neue", "Helvetica", "verdana",
+    "arial", "sans-serif";
+}
+
+h3 {
+  font-size: 22px;
+  text-wrap: balance;
+  font-family: "Century Gothic", "Helvetica Neue", "Helvetica", "verdana",
+    "arial", "sans-serif";
+}
+
+h4 {
+  font-size: 18px;
+  text-wrap: balance;
+  font-family: "Century Gothic", "Helvetica Neue", "Helvetica", "verdana",
+    "arial", "sans-serif";
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.width-general {
+  margin: auto;
+  width: 90%;
+  max-width: 1400px;
+}
+
+.width-general-reduit {
+  margin: auto;
+  width: 80%;
+  max-width: 1080px;
+}
+
+button:active {
+  outline-style: none;
+}
+
+*:focus {
+  outline: auto 5px Highlight;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+/* #endregion */
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {}

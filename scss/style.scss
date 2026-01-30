@@ -1,0 +1,22 @@
+/*
+Theme Name: Galaxyy
+Author: Anthony Jaeger
+Author URI: https://github.com/virtazp
+Description: Thème Galaxyy
+Version: 1.0
+*/
+
+// Import des abstract (variables, mixins, fonctions)
+@use "abstracts/common";
+@use "abstracts/primitives";
+
+// Import des composants
+@use "modules/footer";
+@use "modules/header";
+
+// Import des items
+@use "parts/buttons";
+
+// Import du thème (par défaut ou dark)
+@use "themes/default";
+@use "themes/dark";

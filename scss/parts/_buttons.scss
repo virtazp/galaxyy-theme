@@ -1,0 +1,80 @@
+/*#region Bouton*/
+@mixin type-btn($color, $background, $border) {
+  color: $color !important;
+  background-color: $background;
+  border: 2px solid $border;
+  text-decoration: none !important;
+}
+
+.btn-galaxyy {
+  position: relative;
+  padding: 13px 32px;
+  font-size: 14px;
+  transition: all 300ms ease 0ms;
+  line-height: normal;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.btn-primaire {
+  @include type-btn(var(--noir), var(--vert), var(--vert));
+}
+
+.btn-primaire:hover {
+  @include type-btn(var(--noir), var(--hover-vert), var(--hover-vert));
+}
+
+.btn-secondaire {
+  @include type-btn(var(--blanc), var(--vert-fonce), var(--vert-fonce));
+}
+
+.btn-secondaire:hover {
+  @include type-btn(var(--beige),
+    var(--hover-vert-fonce),
+    var(--hover-vert-fonce));
+}
+
+.btn-tertiaire {
+  @include type-btn(var(--noir), transparent, var(--vert));
+}
+
+.btn-tertiaire:hover {
+  @include type-btn(var(--noir), var(--vert), var(--vert));
+  background-color: var(--vert);
+}
+
+.btn-noir {
+  @include type-btn(var(--noir), transparent, var(--noir));
+}
+
+.btn-noir:hover {
+  @include type-btn(var(--blanc), var(--noir), var(--noir));
+}
+
+.btn-dark-primaire {
+  @include type-btn(var(--noir), var(--blanc), var(--blanc));
+}
+
+.btn-dark-primaire:hover {
+  @include type-btn(var(--noir), var(--beige), var(--beige));
+}
+
+.btn-dark-secondaire {
+  @include type-btn(var(--noir), var(--vert), var(--vert));
+}
+
+.btn-dark-secondaire:hover {
+  @include type-btn(var(--noir), var(--hover-vert), var(--hover-vert));
+}
+
+.btn-dark-tertiaire {
+  @include type-btn(var(--noir), transparent, var(--blanc));
+}
+
+.btn-dark-tertiaire:hover {
+  @include type-btn(var(--noir), var(--beige), var(--beige));
+}
+
+/*#endregion */
