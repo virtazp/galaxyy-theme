@@ -19,7 +19,7 @@ function add_scripts()
 #endregion
 
 #region Scripts Actualités
-add_action('wp_enqueue_scripts', 'galaxyy_conditional_scripts');
+// add_action('wp_enqueue_scripts', 'galaxyy_conditional_scripts');
 function galaxyy_conditional_scripts()
 {
   // Archive actualités
